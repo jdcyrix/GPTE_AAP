@@ -1,0 +1,30 @@
+---
+instances:
+-   CPU: 16
+    Memory: 30720
+    Metadata:
+        AnsibleGroup: satellites
+        Project: ansible-advanced-v2-535c
+        env_type: ansible-advanced-v2
+        guid: 535c
+        instance_filter: ansible-advanced-v2-juangarc@redhat.com
+        ostype: linux
+        owner: juangarc@redhat.com
+    Name: satellite
+    Private_ip: 192.168.50.48
+    Public_IP: 150.239.26.191
+    State: active
+-   CPU: 2
+    Memory: 10240
+    Metadata:
+        AnsibleGroup: bastions,controls
+        Project: ansible-advanced-v2-535c
+        env_type: ansible-advanced-v2
+        guid: 535c
+        instance_filter: ansible-advanced-v2-juangarc@redhat.com
+        ostype: linux
+        owner: juangarc@redhat.com
+    Name: control
+    Private_ip: 192.168.50.91
+    Public_IP: 150.239.20.130
+    State: active

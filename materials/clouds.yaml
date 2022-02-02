@@ -1,0 +1,12 @@
+clouds:
+  535c-project:
+    auth:
+      auth_url: "https://api.orange.sc01.infra.opentlc.com:13000//v3"
+      username: "535c-user"
+      project_name: "535c-project"
+      project_id: "7fc13555461641e8878c7c0a66ccd69e"
+      user_domain_name: "Default"
+      password: "QxRzOaPziYkc"
+    region_name: "regionOne"
+    interface: "public"
+    identity_api_version: 3

@@ -1,0 +1,3 @@
+pywinrm==0.1.1
+ansible==2.9.10
+cryptography==3.3.2

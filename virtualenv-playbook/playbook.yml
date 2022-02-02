@@ -1,0 +1,21 @@
+- name: Python virtual environment
+  hosts: localhost
+  tasks:
+    - name: Create python virtual environment
+      pip:
+        name: pip
+        virtualenv: /home/devops/virtualenvs/auto-env
+        virtualenv_command: python3 -m venv
+
+    - name: Install ansible in virtual environment
+      pip:
+        name: requests
+        state: present
+        virtualenv: /home/devops/virtualenvs/auto-env
+        virtualenv_command: python3 -m venv
+
+    - name: Install ansible in virtual environment
+      pip:
+        requirements: requirements.txt
+        virtualenv: /home/devops/virtualenvs/auto-env
+        virtualenv_command: python3 -m venv
